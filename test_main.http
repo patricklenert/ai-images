@@ -1,0 +1,170 @@
+# XL Yamer's Realistic
+###
+
+POST http://127.0.0.1:8000/plugger/request/
+Content-Type: application/json
+
+{
+  "itemUuid": "3450c955-0ef3-499d-8e2c-8e0db6c1c170",
+  "bucket": "automation-models",
+  "text": "",
+  "rawResponse": true,
+  "configuration": {
+    "negative_prompt": "bad, low quality"
+  }
+}
+
+###
+# Hyper Realism
+###
+
+POST http://127.0.0.1:8000/plugger/request/
+Content-Type: application/json
+
+{
+  "itemUuid": "c8d30c0f-b836-4c2c-b828-fd94a18e0992",
+  "bucket": "automation-models",
+  "text": "",
+  "rawResponse": true,
+  "configuration": {
+    "negative_prompt": "bad, low quality"
+  }
+}
+
+###
+# Edge of Realism
+###
+
+POST http://127.0.0.1:8000/plugger/request/
+Content-Type: application/json
+
+{
+  "itemUuid": "fbb1461b-4a14-44b3-a010-1a208b3160d6",
+  "bucket": "automation-models",
+  "text": "",
+  "rawResponse": true,
+  "configuration": {
+    "negative_prompt": "bad, low quality"
+  }
+}
+
+###
+# epicphotogasm
+###
+
+POST http://127.0.0.1:8000/plugger/request/
+Content-Type: application/json
+
+{
+  "itemUuid": "4c0d34ad-e179-4532-8299-f118627171bd",
+  "bucket": "automation-models",
+  "text": "",
+  "rawResponse": true,
+  "configuration": {
+    "negative_prompt": "bad, low quality"
+  }
+}
+
+### mixinmax1990/realistic-vision-v3
+POST http://127.0.0.1:8000/replicate/models/
+Content-Type: application/json
+
+{
+  "model": "mixinmax1990/realistic-vision-v3",
+  "version": "873330da9601dffafc4f83e4e2da7c361b1b5e883722f26b19790f4f1716c2bc",
+  "bucket": "automation-models",
+  "input": {
+    "prompt": "",
+    "negative_prompt": "",
+    "width": 1024,
+    "height": 1024
+  }
+}
+
+
+###
+### Beispiel: cute elephant, digital art, centered, white background, high pixel density
+### Probleme mit extra Beinen/Armen
+
+POST http://127.0.0.1:8000/replicate/models/
+Content-Type: application/json
+
+{
+  "model": "lucataco/realistic-vision-v5.1",
+  "version": "2c8e954decbf70b7607a4414e5785ef9e4de4b8c51d50fb8b8b349160e0ef6bb",
+  "bucket": "automation-models",
+  "input": {
+    "prompt": "",
+    "negative_prompt": "",
+    "width": 1024,
+    "height": 1024
+  }
+}
+
+
+### Make a POST request to replicate/request with model and input prompt
+POST http://127.0.0.1:8000/replicate/models/
+Content-Type: application/json
+
+{
+  "model": "automioai/carlosescobar93",
+  "version": "9cc60005ee3dddc4057ef665c6c23f3b5648bfb77b1f666a4bb723c94989124b",
+  "bucket": "automation-models",
+  "input": {
+    "prompt": "",
+    "negative_prompt": "",
+    "width": 1024,
+    "height": 1024
+  }
+}
+
+### Make a POST request to replicate/request with model and input prompt
+POST http://127.0.0.1:8000/replicate/cars/
+Content-Type: application/json
+
+{
+  "model": "diaphinus/bodegakitty:8d8f11f6b7d50d536fe284a5c81b0ba0fd64aafec0031accb2ab5ca5ec9aef19",
+  "bucket": "automation-cars",
+  "input": {
+    "prompt": "",
+    "negative_prompt": "",
+    "width": 1024,
+    "height": 1024
+  }
+}
+
+###
+
+### Make a POST request to replicate/request with model and input prompt
+POST http://127.0.0.1:8000/replicate/cars/
+Content-Type: application/json
+
+{
+  "model": "stability-ai/sdxl:8beff3369e81422112d93b89ca01426147de542cd4684c244b673b105188fe5f",
+  "bucket": "automation-cars",
+  "input": {
+    "prompt": "",
+    "negative_prompt": "",
+    "width": 1024,
+    "height": 1024
+  }
+}
+
+###
+
+### Make a POST request to replicate/request with model and input prompt
+POST http://127.0.0.1:8000/replicate/cars/
+Content-Type: application/json
+
+{
+  "model": "davidbarker/sdxl-polaroid:3b4f77682527aa7da097ceff930d25edd4029c8b3a2e0f5226ceff6755395267",
+  "bucket": "automation-cars",
+  "input": {
+    "prompt": "",
+    "negative_prompt": "",
+    "width": 1024,
+    "height": 1024
+  }
+}
+
+###
